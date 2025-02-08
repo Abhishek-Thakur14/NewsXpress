@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import NewsBoard from "./components/NewsBoard.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import NewsBoard from "./Components/NewsBoard.jsx";
 
 const App = () => {
   return (
