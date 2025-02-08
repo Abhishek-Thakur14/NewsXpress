@@ -1,0 +1,84 @@
+.news-container {
+    background: linear-gradient(135deg, #1e1e2f, #232946);
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50; /* Increased gap for more spacing */
+    justify-content: center;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background: #161b22;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 25px; /* More spacing between rows */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  
+  .btn-primary {
+    align-self: start;
+    margin-top: auto;
+  }
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Horizontal gap */
+  }
+  
+  .card {
+    width: 350px; /* Set a fixed width for uniformity */
+    margin-bottom: 30px; /* Adds vertical space between cards */
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,62 @@
+.news-container {
+    background: linear-gradient(135deg, #1e1e2f, #232946);
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* Increased gap slightly for better spacing */
+    justify-content: center;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background: #161b22;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all cards have equal height */
+    margin-bottom: 15px; /* Adds small spacing between rows */
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures uniform image sizing */
+  }
+  
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    flex-grow: 1;
+  }
+  
+  .btn-primary {
+    align-self: start;
+    margin-top: auto;
+  }
+  
